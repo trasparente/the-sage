@@ -13,7 +13,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: var(--sky);
   color: #000;
   font-family: "burbank", "Helvetica Neue", Arial, sans-serif;
   font-size: 25px; }
@@ -879,20 +879,20 @@ hr {
 .bg-green{
   padding-block: 14em 3em;
   background-color: var(--green);
-  background-image: url(img/hills.png);
+  background-image: url(img/hills.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .bg-sky{
   padding-top: 10em;
   background-color: var(--blue);
-  background-image: url(img/sky.png);
+  background-image: url(img/sky.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .bg-soil{
   background-color: var(--soil);
-  background-image: url(img/soil.png);
+  background-image: url(img/soil.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   padding-block: 17em 5em;
