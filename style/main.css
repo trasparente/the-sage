@@ -879,14 +879,14 @@ hr {
   box-shadow: 0 0 30px 5px rgba(246, 188, 25, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
 
 .bg-green{
-  padding-block: 14em 3em;
+  padding-block: 32vw 3em;
   background-color: var(--green);
   background-image: url(img/hills.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .bg-sky{
-  padding-top: 10em;
+  padding-top: 23vw;
   background-color: var(--blue);
   background-image: url(img/sky.jpg);
   background-size: contain;
@@ -897,7 +897,7 @@ hr {
   background-image: url(img/soil.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  padding-block: 17em 5em;
+  padding-block: 35vw 5em;
   color: white;
 }
 .disclaimer{
