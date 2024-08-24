@@ -894,7 +894,7 @@ hr {
 }
 .bg-soil{
   background-color: var(--soil);
-  background-image: url(img/soil.jpg);
+  background-image: url(img/soil-sane.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   padding-block: 35vw 5em;
