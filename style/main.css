@@ -7,7 +7,7 @@
   --red: #ed1b30;
   --blue: #2f91cf;
   --green: #68b945;
-  --soil: #884035;
+  --soil: #873f33;
 
   --radius: 20px;
 }
@@ -95,7 +95,6 @@ h1.title {
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     width: 100%;
-    color: black;
     font-size: 33px;
     line-height: 19px;
     font-weight: bold;
@@ -578,7 +577,7 @@ hr {
     padding: 42px 0px 10px 0;
     line-height: 1;
     min-height: 2em;
-    font-size: 30px;
+    font-size: 33px;
     min-width: 40px; }
 
   .heading {
