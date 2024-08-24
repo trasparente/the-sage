@@ -3,6 +3,7 @@
 :root{
   --yellow: #f6bc19;
   --cream: #f0e9de;
+  --clouds: #f1eade;
   --red: #ed1b30;
   --blue: #2f91cf;
   --green: #68b945;
@@ -13,7 +14,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, white 7em, var(--blue) 7em, var(--blue) 90%, var(--soil) 90%);
+  background: linear-gradient(180deg, var(--clouds) 7em, var(--blue) 7em, var(--blue) 90%,var(--soil) 90%);
   color: #000;
   font-family: "burbank", "Helvetica Neue", Arial, sans-serif;
   font-size: 25px; }
