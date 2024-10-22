@@ -391,6 +391,49 @@ hr {
     text-decoration: none;
     font-weight: 400;
 }
+.last-soil ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.last-soil ul li img {
+  width: 40px;
+}
+
+.last-soil ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0!important;
+}
+.last-soil:after {
+  position: absolute;
+  top: -2px;
+  content: "";
+  background: #873f33;
+  width: 100%;
+  height: 2px;
+}
+
+.last-soil {
+  position: relative;
+}
+.lottis{
+  position: relative;
+}
+.lottis:after {
+  position: absolute;
+  top: -2px;
+  content: "";
+  background: #68b945;
+  width: 100%;
+  height: 5px;
+}
+.last-soil {
+  padding-top: 70px;
+}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
@@ -584,14 +627,14 @@ hr {
   position: relative;
   top: 157px;
   left: -34px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 
 .botm-str ul li:nth-child(2) {
   position: relative;
   top: 23px;
   left: 68px;
-  animation: myAnim6 2s linear 0s 1000 alternate-reverse backwards;
+  /* animation: myAnim6 2s linear 0s 1000 alternate-reverse backwards; */
 }
 
 @keyframes myAnim6 {
@@ -663,7 +706,7 @@ hr {
   position: relative;
   top: 106px;
   left: 466px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 .botm-str ul li:nth-child(5) img{
 animation: zoom1 1s linear 0s 1000 alternate-reverse both;
@@ -673,21 +716,21 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
   position: relative;
   top: -74px;
   left: 492px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 
 .botm-str ul li:nth-child(7) {
   position: relative;
   top: -95px;
   left: 710px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 
 .botm-str ul li:nth-child(8) {
   position: relative;
   top: -230px;
   left: 902px;
-  animation: myAnim6 2s linear 0s 1000 alternate forwards;
+  /* animation: myAnim6 2s linear 0s 1000 alternate forwards; */
 }
 
 
@@ -721,7 +764,7 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
   position: relative;
   top: -124px;
   left: 1182px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 .botm-str ul li {
   list-style: none;
@@ -782,13 +825,13 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
   position: relative;
   top: -265px;
   left: 610px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 .botm-str ul li:nth-child(11) {
   position: relative;
   top: -255px;
   left: 860px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 .botm-str ul li:nth-child(11) img,.botm-str ul li:nth-child(12) img{
 animation: zoom1 1s linear 0s 1000 alternate-reverse both;
@@ -798,13 +841,13 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
   position: relative;
   top: -415px;
   left: 1020px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 .botm-str ul li:nth-child(13) {
   position: relative;
   top: -265px;
   left: 610px;
-  animation: myAnim 2s linear 0s 1000 alternate-reverse forwards;
+  /* animation: myAnim 2s linear 0s 1000 alternate-reverse forwards; */
 }
 
 .botm-str {
@@ -814,6 +857,7 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (max-width: 520px) {
   html, body {
