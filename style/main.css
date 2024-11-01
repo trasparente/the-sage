@@ -475,6 +475,9 @@ hr {
 .list-gifs ul {
   padding: 0;
 }
+.bg-green{
+    position: relative;
+}
 .bg-green::after {
     position: absolute;
     content: "";
