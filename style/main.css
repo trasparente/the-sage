@@ -17,7 +17,9 @@ html, body {
   background: linear-gradient(180deg, var(--blue) 7em, var(--blue) 90%,var(--soil) 90%);
   color: #000;
   font-family: "burbank", "Helvetica Neue", Arial, sans-serif;
-  font-size: 25px; }
+  font-size: 25px;
+  overflow-x: hidden;
+}
 
 body {
   padding: 0; }
