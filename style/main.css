@@ -475,6 +475,14 @@ hr {
 .list-gifs ul {
   padding: 0;
 }
+.bg-green::after {
+    position: absolute;
+    content: "";
+    background-color: #2f91cf;
+    top: -2px;
+    width: 100%;
+    height: 4px;
+}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
