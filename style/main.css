@@ -434,6 +434,45 @@ hr {
 .last-soil {
   padding-top: 70px;
 }
+.list-gifs ul li {
+  list-style: none;
+}
+
+.list-gifs ul li img {
+  width: 100%;
+  max-width: 85%;
+}
+.list-gifs ul li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.list-gifs ul li .inner-gif{
+  width: 107px;
+  height: 107px;
+  margin-right: 7.5px;
+  border-radius: var(--radius);
+  border: 2px solid black;
+  background: #f0e9de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gif-names p ,.list-gifs p{ 
+  font-weight: bold;
+  line-height: 1;
+  font-size: 35px;
+}
+.list-gifs ul li .inner-gif {
+  color: white;
+  /* background: white; */
+  box-shadow: 0 0 30px 5px rgba(246, 188, 25, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+}
+.list-gifs ul {
+  padding: 0;
+}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
@@ -1361,5 +1400,15 @@ animation: zoom1 1s linear 0s 1000 alternate-reverse both;
 }
 .botm-str {
   height: 200px;
+}
+.list-gifs ul li .inner-gif {
+  width: 67px;
+  height: 67px;
+}
+.gif-names p, .list-gifs p {
+  font-weight: bold;
+  line-height: 1;
+  font-size: 25px;
+  margin-bottom: 0;
 }
 }
