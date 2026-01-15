@@ -1,7 +1,7 @@
 function HTMLActuator() {
-  this.tileContainer    = document.querySelector(".tile-container");
-  this.scoreContainer   = document.querySelector(".score-container");
-  this.bestContainer    = document.querySelector(".best-container");
+  this.tileContainer = document.querySelector(".tile-container");
+  this.scoreContainer = document.querySelector(".score-container");
+  this.bestContainer = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
   this.sharingContainer = document.querySelector(".score-sharing");
 
@@ -50,10 +50,10 @@ HTMLActuator.prototype.clearContainer = function (container) {
 HTMLActuator.prototype.addTile = function (tile) {
   var self = this;
 
-  var wrapper   = document.createElement("div");
-  var inner     = document.createElement("div");
-  var img       = document.createElement("img");
-  var position  = tile.previousPosition || { x: tile.x, y: tile.y };
+  var wrapper = document.createElement("div");
+  var inner = document.createElement("div");
+  var img = document.createElement("img");
+  var position = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
   // We can't use classlist because it somehow glitches when replacing classes
@@ -114,30 +114,31 @@ HTMLActuator.prototype.updateScore = function (score) {
   var difference = score - this.score;
   this.score = score;
 
-  // this.scoreContainer.textContent = this.score;
-  this.scoreContainer.textContent = Localize( "p" + this.score );
+  this.scoreContainer.textContent = this.score;
+  // this.scoreContainer.textContent = Localize("p" + this.score);
 
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    // addition.textContent = "+" + difference;
-    addition.textContent = Localize( "p" + this.score );
+    addition.textContent = "+" + difference;
+    // addition.textContent = Localize("p" + this.score);
 
     this.scoreContainer.appendChild(addition);
   }
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.bestContainer.textContent = Localize( "p" + bestScore);
+  this.bestContainer.textContent = bestScore;
+  // this.bestContainer.textContent = Localize("p" + bestScore);
 };
 
 HTMLActuator.prototype.message = function (won) {
-  var type    = won ? "game-won" : "game-over";
+  var type = won ? "game-won" : "game-over";
   var message = Localize(type);
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
-  
+
   this.clearContainer(this.sharingContainer);
   this.sharingContainer.appendChild(this.scoreTweetButton());
   twttr.widgets.load();
@@ -158,7 +159,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "http://www.sageonthemountain.uk");
   tweet.textContent = "Tweet";
 
-  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + Localize("tweet2");
+  var text = Localize("tweet1") + Localize(this.score).toUpperCase() + Localize("tweet2");
   tweet.setAttribute("data-text", text);
 
   return tweet;
