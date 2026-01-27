@@ -486,6 +486,10 @@ hr {
     width: 100%;
     height: 4px;
 }
+.botm-str ul {
+    margin: 0;
+    height: 370px;
+}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
